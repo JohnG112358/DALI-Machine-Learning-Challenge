@@ -33,6 +33,12 @@ print()
 # For other features (e.g., Customer Name) we can't make an educated guess
 # If these features are important for a model we develop later, we might have to drop the row
 
+# pretty safe to drop as long as data isn't scarce
+# numerical values use median
+
+# take product name and predict category and subcategory
+# vector distance
+
 # Now let's generate some descriptive statistics for the quantitative columns
 print("Quantity: ")
 print("- Mean: " + str(df["Quantity"].mean()))
@@ -105,10 +111,57 @@ print(subCategory)
 print()
 
 # looking at this exploratory analysis, some potential questions that jump out at me for an ML model to predict are:
-# - will a customer make more than or less than the number of median purchases per customer
 # - will a purchase make above or below the median profit
 # - can we cluster customers to recommend sub-categories of products a customer might be interested in?
 
 # the next step of my analysis is to perform statistical tests to determine if there is a correlation between
 # certain variables in this dataset.  This will inform feature selection and give me a deeper insight into the dataset
 # please see the file correlation.py for these tests
+
+
+# above or below median profit good
+
+# k means clustering - what types of customers you have
+
+# semtantically what is similar to product name
+# linear - given state and products, output would be a reccomended product
+
+# predict what sub-category might be good, vast majority returning customers
+# array of what each customer bought, drop an element from the array and try and predict it
+
+# no performance benchmarks we need to be hitting
+
+# see if these models work, why you chose the model you chose
+
+# you understand what you're doing and have justifications for why you're implementing cetrain things
+
+#######################
+# - predict product category for name (linear regression, BERT embeddings, word2vec, etc) - FOCUS ON NLP SUB CHALLENGE
+# - reccomend useful products (embeddings from what you already bought, what's close)
+# - useful subcategories based on prior purchases (drop 1 purchase as prediciton, ground truth is all purchases) - hardest, save for last
+# - predict if purchase is above or below median profit (linear regression for simplicity, neural network, quadratic or cubic function, logarithmic function, random forests?)
+# - try and cluster, get more info about the customers
+# - do quantiy and discount correlate
+# - tests - useful correlations for a superstore
+# pull out features with highest weights to determine what influences profit the most
+# ways to make the operation more efficient
+# fill in missing category from sub category and vice versa
+
+# good to see cohesiveness
+# put all of this together
+
+# cohesiveness - things that are useful to a superstore
+
+# not many people have tried NLP
+
+# the optional challenges are a bonus
+# once you have a good amount of work on this, shift to optional challenges
+# don't worry about computer vision challenge
+
+# code samples don't have to be super complicated
+# is code neat, organized, readable
+
+# reccomendations might be a cool thing to do
+# all sounds good
+# explain your rationale
+# comments really important
