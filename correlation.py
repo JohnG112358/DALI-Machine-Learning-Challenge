@@ -106,7 +106,7 @@ print(f_oneway(consumer, corporate, office))
 
 
 df.dropna(subset=["Discount", "Profit", "Quantity"], inplace=True)
-print("Number of rows: " + str(df.shape[0]))
+print("Number of rows: " + str(df.shape[0])) # make sure we still have enough rows
 
 # problem - might not match up
 discount = df["Discount"].to_numpy().reshape(-1, 1)
@@ -115,7 +115,7 @@ quantity = df["Quantity"].to_numpy().reshape(-1, 1)
 
 
 
-'''
+
 ### Correlation between discount and profit ###
 
 # make note about not adding in missing values
@@ -138,9 +138,6 @@ plt.plot(discount, predictions, color="blue", linewidth=3)
 # how to plot regressin line?
 
 plt.show()
-'''
-
-
 
 
 
@@ -158,7 +155,7 @@ print("Coefficient of determination: %.2f" % r2_score(profit, predictions))
 
 
 plt.scatter(quantity, profit, color="black")
-plt.title("Quantity Plotted Against Discount")
+plt.title("Quantity Plotted Against Profit")
 plt.xlabel("Quantity")
 plt.ylabel("Profit")
 
@@ -172,11 +169,26 @@ plt.show()
 
 
 
-
 ### Correlation between discount and quantity ###
 
+regr = linear_model.LinearRegression()
+regr.fit(discount, quantity)
 
-# discount correlates with profit
-# discount correlates with quantity
+predictions = regr.predict(discount)
+
+print("Coefficients: \n", regr.coef_)
+# The coefficient of determination: 1 is perfect prediction
+print("Coefficient of determination: %.2f" % r2_score(quantity, predictions))
+
+plt.scatter(discount, quantity, color="black")
+plt.title("Discount Plotted Against Quantity")
+plt.xlabel("Discount")
+plt.ylabel("Quantity")
+
+plt.plot(discount, predictions, color="blue", linewidth=3)
+
+plt.show()
+
+
 
 # explain why you chose model/test
