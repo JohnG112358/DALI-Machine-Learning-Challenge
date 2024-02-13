@@ -2,7 +2,9 @@
 ### John Guerrerio
 
 This repository contains my code for the machine learning challenge for the
-DALI 2024 winter application.  I chose to analyze the Superstore Dataset.
+DALI 2024 winter application.  I chose to analyze the Superstore Dataset.\
+\
+All files were written in Python 3.10
 
 ## Files
 - exploratoryAnalysis: Basic exploratory analysis of the superstore dataset to get a better feel for the dataset and get
