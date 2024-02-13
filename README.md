@@ -19,3 +19,4 @@ Please note that each file has detailed documentation; for more information, go 
 ## Things to note:
 - After training the model for predictCategory, I ran out of free GPU compute units on Google Colab.  This meant that I couldn't train deep learning models for profitPrediction or complete the optional challenges.
 - predictCategory and profitPrediction were developed in google colab where I had access to better computing resources than my personal machine.  As such, the commit history for this repository only shows the addition of these files once I completed them; it does not show the work I put in developing them.
+- All package versions are the ones Google Colab uses by default; I have recorded them in requirements.txt for convenience.  I know all the code will run in colab; however, I cannot guarantee it will run in other environments.
