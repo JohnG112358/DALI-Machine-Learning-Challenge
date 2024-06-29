@@ -11,6 +11,5 @@ This repository contains my code for the DALI machine learning challenge.  I cho
 Please note that each file has detailed documentation; for more information, go to the file of interest
 
 ## Things to note:
-- All files were developed in Google Colab and collected in this repository once they were completed.  Therefore, the git commit history is an incomplete picture of the development work that went into this challenge.
 - All files were written in Python 3.10
 - All package versions are the ones Google Colab uses by default; I have recorded them in requirements.txt for convenience.  Google colab is a good environment to run this code in, especially for predictCategory which trains a BERT-based classifier and benefits greatly from a GPU.
