@@ -1,6 +1,6 @@
 # DALI Machine Learning Challenge
 
-This repository contains my code for the machine learning challenge for DALI 2024S.  I chose to analyze the Superstore Dataset.
+This repository contains my code for the DALI machine learning challenge.  I chose to analyze the Superstore Dataset.
 
 ## Files
 - exploratoryAnalysis: Exploratory analysis of the superstore dataset to get a better feel for the dataset.  I also use heatmaps, linear regression, and statistical tests to gain insight into relationships between different features.
