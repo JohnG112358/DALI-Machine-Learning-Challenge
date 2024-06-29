@@ -2,6 +2,8 @@
 
 This repository contains my code for the DALI machine learning challenge.  I chose to analyze the Superstore Dataset.
 
+## Deployment Link: https://huggingface.co/spaces/JohnG112358/DALI-ML-Challenge
+
 ## Files
 - exploratoryAnalysis: Exploratory analysis of the superstore dataset to get a better feel for the dataset.  I also use heatmaps, linear regression, and statistical tests to gain insight into relationships between different features.
 - predictCategory: Code to train and evaluate a BERT-based model to predict product category from the product name. This would allow us to fill in missing product category (and product sub-category with a few tweaks to the code) cells in the dataset if the product name is available.  I also used shapley values to increase the interpretability of the BERT model.
