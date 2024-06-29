@@ -1,4 +1,4 @@
-# DALI Developer Challenge
+# DALI Machine Learning Challenge
 
 This repository contains my code for the machine learning challenge for DALI 2024S.  I chose to analyze the Superstore Dataset.
 
